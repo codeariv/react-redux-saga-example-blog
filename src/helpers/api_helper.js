@@ -8,6 +8,8 @@ const axiosApi = axios.create({
 });
 
 axios.interceptors.request.use(function (config) {
+  config.headers["Content-Type"] = "application/x-www-form-urlencoded";
+  config.headers["Accept"] = "application/json";
   return config;
 });
 

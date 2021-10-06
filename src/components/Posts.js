@@ -19,9 +19,9 @@ export default function Posts() {
           />
         </div>
       ) : (
-        posts.map((item) => {
+        posts.map((item, index) => {
           return (
-            <Row className="posts">
+            <Row className="posts" key={index}>
               <Col lg={8} md={10} sm={12}>
                 <Link to={`/${item.id}`}>
                   <Card>
