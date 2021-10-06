@@ -1,0 +1,45 @@
+a {
+  text-decoration: none !important;
+}
+.home {
+  margin-top: 2rem;
+  .posts {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.posts {
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.card {
+  margin-bottom: 1rem;
+  .card-title {
+    font-size: 1.5em;
+    color: black;
+  }
+  .card-text {
+    font-size: 1em;
+    color: black;
+  }
+  &:hover {
+    background: rgb(228, 228, 228);
+  }
+}
